@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia Interactiva - Página Principal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Historia Interactiva</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="ejercicios.html">Ejercicios</a>
+      <a href="sobre.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto y reclamos</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explora las Civilizaciones Antiguas</h2>
+
+    <!-- Imagen debajo del título -->
+    <img src="imagenes/civilizaciones.jpg" alt="Civilizaciones antiguas" class="imagen-portada">
+
+    <div class="botones-temas">
+      <button onclick="mostrarContenido('mesopotamia')">Mesopotamia</button>
+      <button onclick="mostrarContenido('egipto')">Egipto</button>
+      <button onclick="mostrarContenido('roma')">Roma</button>
+      <button onclick="mostrarContenido('grecia')">Grecia</button>
+      <button onclick="mostrarContenido('china')">China</button>
+      <button onclick="mostrarContenido('otros')">Otros</button>
+    </div>
+
+    <div id="mesopotamia" class="contenido-tema" style="display: none">
+      <h3>Mesopotamia</h3>
+      <p>Mesopotamia fue una región histórica entre los ríos Tigris y Éufrates, cuna de algunas de las primeras civilizaciones como Sumeria, Babilonia y Asiria.</p>
+    </div>
+
+    <div id="egipto" class="contenido-tema" style="display: none">
+      <h3>Egipto</h3>
+      <p>Egipto antiguo se desarrolló a lo largo del río Nilo. Es conocido por sus pirámides, faraones y una rica cultura escrita en jeroglíficos.</p>
+    </div>
+
+    <div id="roma" class="contenido-tema" style="display: none">
+      <h3>Roma</h3>
+      <p>La antigua Roma fue un poderoso imperio que influenció profundamente la política, el derecho, el idioma y la arquitectura en Europa y el mundo.</p>
+    </div>
+
+    <div id="grecia" class="contenido-tema" style="display: none">
+      <h3>Grecia</h3>
+      <p>Grecia fue la cuna de la democracia, la filosofía occidental y el teatro. Grandes pensadores como Sócrates y Platón nacieron allí.</p>
+    </div>
+
+    <div id="china" class="contenido-tema" style="display: none">
+      <h3>China</h3>
+      <p>La antigua China desarrolló una civilización rica en ciencia, filosofía y arte. Dinastías como la Shang y la Han marcaron su historia.</p>
+    </div>
+
+    <div id="otros" class="contenido-tema" style="display: none">
+      <h3>Otros</h3>
+      <p>También puedes explorar otras civilizaciones como los mayas, incas, persas, y muchas más que dejaron un gran legado cultural.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Historia Interactiva. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
