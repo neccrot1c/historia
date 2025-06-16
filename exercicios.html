@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicios de Historia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Historia Interactiva</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="ejercicios.html">Ejercicios</a>
+      <a href="sobre.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto y reclamos</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Elige un tema para hacer el quiz</h2>
+
+    <div class="botones-temas">
+      <button onclick="mostrarQuiz('mesopotamia')">Mesopotamia</button>
+      <button onclick="mostrarQuiz('egipto')">Egipto</button>
+      <button onclick="mostrarQuiz('roma')">Roma</button>
+      <button onclick="mostrarQuiz('grecia')">Grecia</button>
+      <button onclick="mostrarQuiz('china')">China</button>
+    </div>
+
+    <!-- Quizzes ocultos inicialmente -->
+    <div id="mesopotamia" class="quiz-tema" style="display:none;">
+      <h3>Quiz: Mesopotamia</h3>
+      <div class="contenido-tema">
+        <h4>1. ¿Cuál fue una de las principales civilizaciones de Mesopotamia?</h4>
+        <button onclick="verificarRespuesta(this, true)">Sumeria</button>
+        <button onclick="verificarRespuesta(this, false)">Egipto</button>
+        <button onclick="verificarRespuesta(this, false)">Roma</button>
+        <div class="feedback"></div>
+      </div>
+      <div class="contenido-tema">
+        <h4>2. ¿Qué río era vital para la civilización mesopotámica?</h4>
+        <button onclick="verificarRespuesta(this, true)">Tigris y Éufrates</button>
+        <button onclick="verificarRespuesta(this, false)">Nilo</button>
+        <button onclick="verificarRespuesta(this, false)">Amazonas</button>
+        <div class="feedback"></div>
+      </div>
+    </div>
+
+    <div id="egipto" class="quiz-tema" style="display:none;">
+      <h3>Quiz: Egipto</h3>
+      <div class="contenido-tema">
+        <h4>1. ¿Qué río era vital para la civilización egipcia?</h4>
+        <button onclick="verificarRespuesta(this, true)">Nilo</button>
+        <button onclick="verificarRespuesta(this, false)">Tigris</button>
+        <button onclick="verificarRespuesta(this, false)">Amazonas</button>
+        <div class="feedback"></div>
+      </div>
+      <div class="contenido-tema">
+        <h4>2. ¿Cuál era la escritura utilizada por los antiguos egipcios?</h4>
+        <button onclick="verificarRespuesta(this, true)">Jeroglíficos</button>
+        <button onclick="verificarRespuesta(this, false)">Cuneiforme</button>
+        <button onclick="verificarRespuesta(this, false)">Alfabeto latino</button>
+        <div class="feedback"></div>
+      </div>
+    </div>
+
+    <div id="roma" class="quiz-tema" style="display:none;">
+      <h3>Quiz: Roma</h3>
+      <div class="contenido-tema">
+        <h4>1. ¿Qué imperio construyó una extensa red de carreteras en Europa?</h4>
+        <button onclick="verificarRespuesta(this, true)">Romano</button>
+        <button onclick="verificarRespuesta(this, false)">Egipcio</button>
+        <button onclick="verificarRespuesta(this, false)">Chino</button>
+        <div class="feedback"></div>
+      </div>
+      <div class="contenido-tema">
+        <h4>2. ¿Qué estructura construyeron los romanos para transportar agua?</h4>
+        <button onclick="verificarRespuesta(this, true)">Acueductos</button>
+        <button onclick="verificarRespuesta(this, false)">Pirámides</button>
+        <button onclick="verificarRespuesta(this, false)">Zigurats</button>
+        <div class="feedback"></div>
+      </div>
+    </div>
+
+    <div id="grecia" class="quiz-tema" style="display:none;">
+      <h3>Quiz: Grecia</h3>
+      <div class="contenido-tema">
+        <h4>1. ¿Qué civilización es conocida como la cuna de la democracia?</h4>
+        <button onclick="verificarRespuesta(this, true)">Grecia</button>
+        <button onclick="verificarRespuesta(this, false)">Roma</button>
+        <button onclick="verificarRespuesta(this, false)">China</button>
+        <div class="feedback"></div>
+      </div>
+      <div class="contenido-tema">
+        <h4>2. ¿Qué ciudad griega fue famosa por su filosofía?</h4>
+        <button onclick="verificarRespuesta(this, true)">Atenas</button>
+        <button onclick="verificarRespuesta(this, false)">Alejandría</button>
+        <button onclick="verificarRespuesta(this, false)">Cartago</button>
+        <div class="feedback"></div>
+      </div>
+    </div>
+
+    <div id="china" class="quiz-tema" style="display:none;">
+      <h3>Quiz: China</h3>
+      <div class="contenido-tema">
+        <h4>1. ¿En qué continente se originó la civilización china antigua?</h4>
+        <button onclick="verificarRespuesta(this, true)">Asia</button>
+        <button onclick="verificarRespuesta(this, false)">África</button>
+        <button onclick="verificarRespuesta(this, false)">Europa</button>
+        <div class="feedback"></div>
+      </div>
+      <div class="contenido-tema">
+        <h4>2. ¿Qué invento se atribuye a los chinos en la antigüedad?</h4>
+        <button onclick="verificarRespuesta(this, true)">Papel</button>
+        <button onclick="verificarRespuesta(this, false)">Democracia</button>
+        <button onclick="verificarRespuesta(this, false)">Alfabeto</button>
+        <div class="feedback"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Historia Interactiva. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="ejercicios.js"></script>
+</body>
+</html>
